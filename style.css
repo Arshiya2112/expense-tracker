@@ -1,0 +1,129 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 20px;
+}
+
+.container1 {
+    
+    margin: 0 auto;
+    background-color: rgb(8, 11, 155);
+    padding: 10px;
+    /* border-radius: 10px; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    outline: none;
+    margin:4px;
+    flex: 1;
+}
+
+input[type="text"]::placeholder,
+input[type="number"]::placeholder {
+    color: gray
+}
+
+button {
+    padding: 10px 20px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 2px;
+}
+
+button:hover {
+    background-color: rgb(86, 225, 86);
+}
+
+.container2 {
+    border: 1px solid rgb(8, 11, 155);
+    /* border-radius: 10px; */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    background-color: rgb(8, 11, 155);
+    padding: 10px;
+    text-align: left;
+    color: white;
+}
+
+tbody td {
+    padding: 10px;
+    border-top: 1px solid rgb(11, 72, 125);
+}
+
+.delete-btn, .edit-btn {
+    color: red;
+    cursor: pointer;
+}
+
+.edit-btn {
+    color: blue;
+    margin-right: 10px;
+}
+
+.container3 {
+    padding: 10px;
+    text-align: right;
+    color: white;
+    background-color: rgb(143, 40, 239);
+}
+
+#monthly-total {
+    padding: 10px;
+    text-align: right;
+    margin-top: 10px;
+    background-color: rgb(143, 40, 239);
+    color: white;
+    font-weight: bold;
+}
+
+#clear-all {
+    padding: 10px 20px;
+    background-color: darkred;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 10px auto;
+    display: block;
+}
+
+#clear-all:hover {
+    background-color: red;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus{
+    border-color: #4CAF50;
+}

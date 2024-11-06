@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRACK YOUR EXPENSES</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container1">
+        <h1>Track Your Expenses</h1>
+        <form id="expense-form">
+            <input type="text" id="expense" placeholder="Enter Expense Type" required>
+            <input type="number" id="amount" placeholder="Enter Expense Amount" required>
+            <select id="category" required>
+                <option value="Food">Food</option>
+                <option value="Transportation">Transportation</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Utilities">Utilities</option>
+                <option value="Others">Others</option>
+            </select>
+            <input type="date" id="date" required>
+            <button type="submit">Add Expense</button>
+        </form>
+        <input type="text" id="search" placeholder="Search Expense..." oninput="filterExpenses()">
+    </div>
+
+    <div class="container2">
+        <table>
+            <thead>
+                <tr>
+                    <th>Expense Type</th>
+                    <th>Expense Amount</th>
+                    <th>Category</th>
+                    <th>Date</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="expense-list"></tbody>
+        </table>
+        <div class="container3">
+            <strong>Total Expenses : </strong>
+            Rs <span id="Total-Amount">0</span>
+        </div>
+        <div id="monthly-total">Monthly Total : Rs 0</div>
+        <button type="button" id="clear-all">Clear All</button>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
